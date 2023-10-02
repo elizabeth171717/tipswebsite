@@ -59,7 +59,7 @@ Global Styles
 
   body {
     font-family: var(--ff-secondary);
-   
+    background-color: var(--clr-grey-ligther);
     color: var(--clr-grey-1);
    
     font-size: 0.875rem;
@@ -82,24 +82,26 @@ Global Styles
   }
   
   
-  h2,
-  h3{
-    letter-spacing: var(--spacing);
-    text-transform: capitalize;
-    
-    margin-bottom: 0.75rem;
-   
-  }
+
   h1 {
     font-size: 3rem;
     line-height: 1.25;
     margin: 1rem 2rem ;
+    font-family: var(--ff-primary);
   }
+
 h2 {
-    color: var(--clr-primary);
+    color: var(--clr-primary-lght);
     font-size: 2rem;
 }
 @media (max-width:500px) {
+    h1 {
+        font-size: 2rem;
+        line-height: 1.;
+        margin: 1rem ;
+        font-family: var(--ff-primary);
+      }
+
     h2 {
       
         font-size: 1.50rem;
@@ -136,13 +138,15 @@ p{
 .download-text{
     writing-mode: vertical-lr;
     text-align: center;
-    letter-spacing: 1rem;
+    letter-spacing: .50rem;
+    font-weight: bold;
+    margin-left: 5px;
     color: var(--clr-primary-dark);
 }
 
 .photo {
 width: 500px;
-
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .photo img{
@@ -163,6 +167,7 @@ width: 500px;
 span {
     font-weight: bold;
     color:var(--clr-black);
+    font-family: var(--ff-primary);
 }
 
 .intro-text .text p{
@@ -178,6 +183,7 @@ span {
 
 .download img {
     width: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 @media (max-width:800px) {
@@ -268,7 +274,7 @@ text-align: center;
     width: 300px;
     height: 300px;
     border-radius: 100%;
-  
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .gallery-img img{
@@ -386,7 +392,8 @@ text-align: center;
     border: 1px solid grey;
    display: flex;
    flex-direction: column;
-  
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 
 }
 
@@ -482,4 +489,3 @@ footer{
     padding: 30px 10px;
    
 }
-
