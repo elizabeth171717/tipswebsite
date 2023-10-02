@@ -59,7 +59,7 @@ Global Styles
 
   body {
     font-family: var(--ff-secondary);
-    background-color: var(--clr-grey-ligther);
+    background-color:var(--clr-grey-ligth);
     color: var(--clr-grey-1);
    
     font-size: 0.875rem;
@@ -141,7 +141,7 @@ p{
     letter-spacing: .50rem;
     font-weight: bold;
     margin-left: 5px;
-    color: var(--clr-primary-dark);
+    color: va(--clr-white);
 }
 
 .photo {
