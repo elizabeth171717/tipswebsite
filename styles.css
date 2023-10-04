@@ -242,25 +242,29 @@ span {
  
     .hero-section {
      
-        gap: .50rem;
-       
-    }
+        gap: .25rem;
+       }
 
-    .intro-img {
-        width:100%;
-        align-items: center;
-       
-    }
+.intro-img {
+    width:100%;
+    padding: 0 .50rem;
+}
 
-    .photo {
-        width: 90%;
-                }
-        
+.photo {
+width: 100%;
+}
+
+.photo img{
+    width: 100%;
    
-    .download-text{
-      letter-spacing: .50rem;
     }
-    
+
+    .download-text{
+       
+        letter-spacing: .25rem;
+        }
+
+ 
 }
 
 /*******************ABOUT SECTION***********************/
