@@ -1,7 +1,11 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".download-text", {
-    y: 30,
+gsap.to(".logo", {
+    x: 150,
+    rotation:360,
     duration:2,
-    ScrollTrigger: ".download-text"
-})
+    ScrollTrigger: {
+        trigger: ".logo",
+        toogleActions:"restart"
+        }
+    })
