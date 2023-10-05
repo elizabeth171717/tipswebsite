@@ -121,7 +121,23 @@ p{
     font-size: 1.25rem;
     margin: .50rem ;
 }
+.logo-container {
+    width: 100%;
+    max-width: 100%;
+    background-color: var(--clr-black);
+    padding: 1rem 0;
+}
 
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+.logo img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
 /***************HERO SECTION********************************/
 
 .hero-section {
