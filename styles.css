@@ -125,7 +125,7 @@ p{
     width: 100%;
     max-width: 100%;
     background-color: var(--clr-black);
-    padding: 1rem 0;
+    padding-top: 1rem ;
 }
 
 .logo{
