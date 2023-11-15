@@ -60,7 +60,7 @@ Global Styles
     font-family: var(--ff-secondary);
     background-color: var(--clr-grey-ligther);
     color: var(--clr-grey-1);
-   
+     overflow-x: hidden;
     font-size: 0.875rem;
   }
 
@@ -549,4 +549,19 @@ footer{
     background-color: var(--clr-black);
     padding: 30px 10px;
    color: var(--clr-primary);
+}
+
+/*ANIMATION*/
+.box {
+   
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+transform: translateX(-400%);
+}
+
+.box.show {
+    transform: translateX(0);
 }
