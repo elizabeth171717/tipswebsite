@@ -25,7 +25,7 @@
         <h1>Your TIPS in the palm of your HAND</h1>
 
         <div class="intro">
-          <div class="intro-img">
+          <div class="intro-img box">
             <div class="photo">
               <img src="images/bg.jpg" alt="hand holding cellphone" />
             </div>
@@ -61,8 +61,8 @@
       <!--ABOUT SECTION STARTS-->
       <section id="about" class="about">
         <div class="section-wrapper">
-          <img src="images/3.png" style="margin: 2rem 0"/>
-          <img src="images/animated text.png" />
+          <img class="box show" src="images/3.png" style="margin: 2rem 0" />
+          <img class="box" src="images/animated text.png" />
 
           <div class="container">
             <div class="sub-heading">
@@ -86,7 +86,7 @@
                 last month, last week or yesterday, the APP will do it for you.
               </p>
             </div>
-            <div class="split-left">
+            <div class="split-left box">
               <img src="images/entertips.jpg" alt="" />
             </div>
           </div>
@@ -97,7 +97,7 @@
               <p>Available on Google Play and the App Store.</p>
             </div>
 
-            <div class="split-left">
+            <div class="split-left box">
               <img src="images/profile.jpg" />
             </div>
           </div>
@@ -136,7 +136,7 @@
               </div>
             </div>
           </div>
-          <div class="animated-text">
+          <div class="animated-text box">
             <img src="images/table.jpg" />
           </div>
         </div>
@@ -180,48 +180,48 @@
             ></iframe>
           </div>
 
-          <div class="animated-text">
+          <div class="animated-text box">
             <img src="images/contacimg.jpg" />
           </div>
         </div>
       </section>
       <footer><p>All rigths reserved Tips Tracking 2023</p></footer>
     </div>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="app.js"></script>
 
+    <script src="app.js"></script>
     <!-- Messenger Chat Plugin Code -->
     <div id="fb-root"></div>
 
     <!-- Your Chat Plugin code -->
-    <div id="fb-customer-chat" class="fb-customerchat">
-    </div>
+    <div id="fb-customer-chat" class="fb-customerchat"></div>
 
     <script>
-      var chatbox = document.getElementById('fb-customer-chat');
+      var chatbox = document.getElementById("fb-customer-chat");
       chatbox.setAttribute("page_id", "115212744854535");
       chatbox.setAttribute("attribution", "biz_inbox");
     </script>
 
     <!-- Your SDK code -->
     <script>
-      window.fbAsyncInit = function() {
+      window.fbAsyncInit = function () {
         FB.init({
-          xfbml            : true,
-          version          : 'v18.0'
+          xfbml: true,
+          version: "v18.0",
         });
       };
 
-      (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
         fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));
+      })(document, "script", "facebook-jssdk");
     </script>
   </body>
 </html>
-
 
