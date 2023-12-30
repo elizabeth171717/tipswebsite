@@ -38,7 +38,8 @@ Variables
     --radius: 0.5rem;
     --light-shadow: 0 5px 15px rgba(216, 210, 210, 0.1);
     --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-   
+    --max-width: 1170px;
+    --fixed-width: 620px;
   }
 /*
 =============== 
@@ -60,7 +61,7 @@ Global Styles
     font-family: var(--ff-secondary);
     background-color: var(--clr-grey-ligther);
     color: var(--clr-grey-1);
-     overflow-x: hidden;
+    overflow-x: hidden;
     font-size: 0.875rem;
   }
 
@@ -121,11 +122,13 @@ p{
     font-size: 1.25rem;
     margin: .50rem ;
 }
+
+/***************HERO SECTION********************************/
 .logo-container {
     width: 100%;
     max-width: 100%;
     background-color: var(--clr-black);
-    padding-top: 1rem ;
+    padding: 1rem 0;
 }
 
 .logo{
@@ -138,8 +141,6 @@ p{
     height: 100px;
     object-fit: cover;
 }
-/***************HERO SECTION********************************/
-
 .hero-section {
     width: 100%;
     min-height: 100vh;
@@ -158,7 +159,7 @@ p{
 .intro-img {
     width:50%;
     display: flex;
- 
+   
     
     padding: 0 2rem;
 }
@@ -254,7 +255,7 @@ span {
 }
 
 @media (max-width:500px) {
- 
+
     .hero-section {
      
         gap: .25rem;
@@ -279,7 +280,6 @@ width: 100%;
         letter-spacing: .25rem;
         }
 
- 
 }
 
 /*******************ABOUT SECTION***********************/
@@ -541,13 +541,41 @@ text-align: center;
   font-size: 5rem;
 }
 
-footer{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    background-color: var(--clr-black);
-    padding: 30px 10px;
-   color: var(--clr-primary);
+
+/*ANIMATION*/
+.box {
+   
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
 }
 
+.box:nth-of-type(even) {
+transform: translateX(-400%);
+}
+
+.box.show {
+    transform: translateX(0);
+}
+
+
+/****************************FOOTER********************************/
+footer{
+    padding: 3rem;
+
+    text-align: center;
+    background-color: var(--clr-black);
+
+   color: var(--clr-primary);
+  }
+  
+  footer a{
+  text-decoration:overline;
+  font-weight: bold;
+  font-style: italic;
+  }
+  
+  @media (max-width:500px) {
+    footer{
+      padding-bottom: 4rem;
+    }
+  }
