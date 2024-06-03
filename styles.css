@@ -307,7 +307,7 @@ span {
 .card-description{
     padding: 2rem;
     background-image: url(images/bgi.jpg);
-    color: var(--clr-white);
+    color: var(--clr-primary);
     font-size: 1.25rem;
     font-weight: bold;
     text-align: center;
